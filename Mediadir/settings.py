@@ -130,3 +130,15 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='sreenusre77@gmail.com'                     
+EMAIL_HOST_PASSWORD='mcfesjmqbmvkhzqx'                             
+#EMAIL_PORT=587                       #TLS(Transfer layer security) port number is 587      SSL(secure socket layer) port number is 465
+#EMAIL_USE_TLS=True
+#EMAIL_USE_SSL=False
+
+# OR
+EMAIL_PORT=465                       #TLS(Transfer layer security) port number is 587      SSL(secure socket layer) port number is 465
+EMAIL_USE_TLS=False
+EMAIL_USE_SSL=True
