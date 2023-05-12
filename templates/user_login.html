@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    {% extends 'dummy.html' %}
+
+
+    
+    {% block title %}
+    <title>user_login</title>
+    {% endblock %}
+    
+   
+</head>
+<body>
+
+    {% block body_block %}
+    <center>
+        <form method="POST">
+            {% csrf_token %}
+
+
+
+
+            <label for="username">username</label>
+            <input type="text" name="username" id="username"><br>
+            <br>
+
+
+            <label for="passeord">passeord</label>
+            <input type="password" name="password" id="password"><br>
+            <br>
+
+
+            <input type="submit" value="user_login"><br>
+            <br>
+
+            <a href="{% url 'forgot_password' %}">forgot password</a>
+
+        </form>
+    </center>
+    {% endblock %}
+</body>
+</html>

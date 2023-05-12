@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% extends 'dummy.html' %}
+</head>
+<body style="background-image:url();">
+
+    {% block body_block %}
+    <center>
+
+
+    {% if username %}
+
+        <h1>Welcome to home page Mr/Ms {{username}}</h1>
+    {% else %}
+        <h1> Welcome to home page </h1>
+    {% endif %}
+
+
+    
+    </center>
+    {% endblock %}
+</body>
+</html>
